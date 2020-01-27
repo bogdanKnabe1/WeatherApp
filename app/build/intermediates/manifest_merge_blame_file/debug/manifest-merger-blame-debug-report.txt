@@ -1,0 +1,215 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.example.weatherapp"
+4    android:versionCode="1"
+5    android:versionName="1.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="21"
+8-->Z:\AT\WeatherApp\app\src\main\AndroidManifest.xml
+9        android:targetSdkVersion="29" />
+9-->Z:\AT\WeatherApp\app\src\main\AndroidManifest.xml
+10
+11    <!-- Location permissions -->
+12    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+12-->Z:\AT\WeatherApp\app\src\main\AndroidManifest.xml:6:5-81
+12-->Z:\AT\WeatherApp\app\src\main\AndroidManifest.xml:6:22-78
+13    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" /> <!-- Internet permissions -->
+13-->Z:\AT\WeatherApp\app\src\main\AndroidManifest.xml:7:5-79
+13-->Z:\AT\WeatherApp\app\src\main\AndroidManifest.xml:7:22-76
+14    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+14-->Z:\AT\WeatherApp\app\src\main\AndroidManifest.xml:8:5-79
+14-->Z:\AT\WeatherApp\app\src\main\AndroidManifest.xml:8:22-76
+15    <uses-permission android:name="android.permission.INTERNET" />
+15-->Z:\AT\WeatherApp\app\src\main\AndroidManifest.xml:9:5-67
+15-->Z:\AT\WeatherApp\app\src\main\AndroidManifest.xml:9:22-64
+16    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+16-->Z:\AT\WeatherApp\app\src\main\AndroidManifest.xml:10:5-82
+16-->Z:\AT\WeatherApp\app\src\main\AndroidManifest.xml:10:22-79
+17    <uses-permission android:name="android.permission.WAKE_LOCK" />
+17-->[com.google.firebase:firebase-iid:20.0.2] C:\Users\NinpouPC\.gradle\caches\transforms-2\files-2.1\946a39d7756c6b05aa38a853bdffc128\firebase-iid-20.0.2\AndroidManifest.xml:24:5-68
+17-->[com.google.firebase:firebase-iid:20.0.2] C:\Users\NinpouPC\.gradle\caches\transforms-2\files-2.1\946a39d7756c6b05aa38a853bdffc128\firebase-iid-20.0.2\AndroidManifest.xml:24:22-65
+18
+19    <application
+19-->Z:\AT\WeatherApp\app\src\main\AndroidManifest.xml:12:5-38:19
+20        android:name="com.example.weatherapp.ApplicationClass"
+20-->Z:\AT\WeatherApp\app\src\main\AndroidManifest.xml:13:9-41
+21        android:allowBackup="true"
+21-->Z:\AT\WeatherApp\app\src\main\AndroidManifest.xml:14:9-35
+22        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+22-->[androidx.core:core:1.1.0] C:\Users\NinpouPC\.gradle\caches\transforms-2\files-2.1\331630a23dfa1f0594bcf54d5352aa36\core-1.1.0\AndroidManifest.xml:24:18-86
+23        android:debuggable="true"
+24        android:icon="@mipmap/ic_launcher_weather"
+24-->Z:\AT\WeatherApp\app\src\main\AndroidManifest.xml:15:9-51
+25        android:label="@string/app_name"
+25-->Z:\AT\WeatherApp\app\src\main\AndroidManifest.xml:16:9-41
+26        android:roundIcon="@mipmap/ic_launcher_weather"
+26-->Z:\AT\WeatherApp\app\src\main\AndroidManifest.xml:17:9-56
+27        android:supportsRtl="true"
+27-->Z:\AT\WeatherApp\app\src\main\AndroidManifest.xml:18:9-35
+28        android:testOnly="true"
+29        android:theme="@style/AppTheme"
+29-->Z:\AT\WeatherApp\app\src\main\AndroidManifest.xml:19:9-40
+30        android:usesCleartextTraffic="true" >
+30-->Z:\AT\WeatherApp\app\src\main\AndroidManifest.xml:20:9-44
+31        <service
+31-->Z:\AT\WeatherApp\app\src\main\AndroidManifest.xml:21:9-27:19
+32            android:name="com.example.weatherapp.NotificationService"
+32-->Z:\AT\WeatherApp\app\src\main\AndroidManifest.xml:22:13-48
+33            android:exported="false" >
+33-->Z:\AT\WeatherApp\app\src\main\AndroidManifest.xml:23:13-37
+34            <intent-filter>
+34-->Z:\AT\WeatherApp\app\src\main\AndroidManifest.xml:24:13-26:29
+35                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+35-->Z:\AT\WeatherApp\app\src\main\AndroidManifest.xml:25:17-78
+35-->Z:\AT\WeatherApp\app\src\main\AndroidManifest.xml:25:25-75
+36            </intent-filter>
+37        </service>
+38
+39        <activity
+39-->Z:\AT\WeatherApp\app\src\main\AndroidManifest.xml:28:9-36:20
+40            android:name="com.example.weatherapp.view.SplashActivity"
+40-->Z:\AT\WeatherApp\app\src\main\AndroidManifest.xml:29:13-48
+41            android:theme="@style/SplashTheme" >
+41-->Z:\AT\WeatherApp\app\src\main\AndroidManifest.xml:30:13-47
+42            <intent-filter>
+42-->Z:\AT\WeatherApp\app\src\main\AndroidManifest.xml:31:13-35:29
+43                <action android:name="android.intent.action.MAIN" />
+43-->Z:\AT\WeatherApp\app\src\main\AndroidManifest.xml:32:17-69
+43-->Z:\AT\WeatherApp\app\src\main\AndroidManifest.xml:32:25-66
+44
+45                <category android:name="android.intent.category.LAUNCHER" />
+45-->Z:\AT\WeatherApp\app\src\main\AndroidManifest.xml:34:17-77
+45-->Z:\AT\WeatherApp\app\src\main\AndroidManifest.xml:34:27-74
+46            </intent-filter>
+47        </activity>
+48        <activity android:name="com.example.weatherapp.view.MainActivity" />
+48-->Z:\AT\WeatherApp\app\src\main\AndroidManifest.xml:37:9-55
+48-->Z:\AT\WeatherApp\app\src\main\AndroidManifest.xml:37:19-52
+49
+50        <service
+50-->[com.google.firebase:firebase-database:19.2.0] C:\Users\NinpouPC\.gradle\caches\transforms-2\files-2.1\1b13ddd0979a31d5382231a327fe44a7\firebase-database-19.2.0\AndroidManifest.xml:29:9-35:19
+51            android:name="com.google.firebase.components.ComponentDiscoveryService"
+51-->[com.google.firebase:firebase-database:19.2.0] C:\Users\NinpouPC\.gradle\caches\transforms-2\files-2.1\1b13ddd0979a31d5382231a327fe44a7\firebase-database-19.2.0\AndroidManifest.xml:30:13-84
+52            android:directBootAware="true"
+52-->[com.google.firebase:firebase-common:19.3.0] C:\Users\NinpouPC\.gradle\caches\transforms-2\files-2.1\55a309771aae37240f252916061b6dd5\jetified-firebase-common-19.3.0\AndroidManifest.xml:34:13-43
+53            android:exported="false" >
+53-->[com.google.firebase:firebase-database:19.2.0] C:\Users\NinpouPC\.gradle\caches\transforms-2\files-2.1\1b13ddd0979a31d5382231a327fe44a7\firebase-database-19.2.0\AndroidManifest.xml:31:13-37
+54            <meta-data
+54-->[com.google.firebase:firebase-database:19.2.0] C:\Users\NinpouPC\.gradle\caches\transforms-2\files-2.1\1b13ddd0979a31d5382231a327fe44a7\firebase-database-19.2.0\AndroidManifest.xml:32:13-34:85
+55                android:name="com.google.firebase.components:com.google.firebase.database.DatabaseRegistrar"
+55-->[com.google.firebase:firebase-database:19.2.0] C:\Users\NinpouPC\.gradle\caches\transforms-2\files-2.1\1b13ddd0979a31d5382231a327fe44a7\firebase-database-19.2.0\AndroidManifest.xml:33:17-109
+56                android:value="com.google.firebase.components.ComponentRegistrar" />
+56-->[com.google.firebase:firebase-database:19.2.0] C:\Users\NinpouPC\.gradle\caches\transforms-2\files-2.1\1b13ddd0979a31d5382231a327fe44a7\firebase-database-19.2.0\AndroidManifest.xml:34:17-82
+57            <meta-data
+57-->[com.google.firebase:firebase-messaging:20.1.0] C:\Users\NinpouPC\.gradle\caches\transforms-2\files-2.1\9a24fd8fac75a6bd83e8e5b07519ef98\jetified-firebase-messaging-20.1.0\AndroidManifest.xml:38:13-40:85
+58                android:name="com.google.firebase.components:com.google.firebase.messaging.FirebaseMessagingRegistrar"
+58-->[com.google.firebase:firebase-messaging:20.1.0] C:\Users\NinpouPC\.gradle\caches\transforms-2\files-2.1\9a24fd8fac75a6bd83e8e5b07519ef98\jetified-firebase-messaging-20.1.0\AndroidManifest.xml:39:17-119
+59                android:value="com.google.firebase.components.ComponentRegistrar" />
+59-->[com.google.firebase:firebase-messaging:20.1.0] C:\Users\NinpouPC\.gradle\caches\transforms-2\files-2.1\9a24fd8fac75a6bd83e8e5b07519ef98\jetified-firebase-messaging-20.1.0\AndroidManifest.xml:40:17-82
+60            <meta-data
+60-->[com.google.firebase:firebase-iid:20.0.2] C:\Users\NinpouPC\.gradle\caches\transforms-2\files-2.1\946a39d7756c6b05aa38a853bdffc128\firebase-iid-20.0.2\AndroidManifest.xml:32:13-34:85
+61                android:name="com.google.firebase.components:com.google.firebase.iid.Registrar"
+61-->[com.google.firebase:firebase-iid:20.0.2] C:\Users\NinpouPC\.gradle\caches\transforms-2\files-2.1\946a39d7756c6b05aa38a853bdffc128\firebase-iid-20.0.2\AndroidManifest.xml:33:17-96
+62                android:value="com.google.firebase.components.ComponentRegistrar" />
+62-->[com.google.firebase:firebase-iid:20.0.2] C:\Users\NinpouPC\.gradle\caches\transforms-2\files-2.1\946a39d7756c6b05aa38a853bdffc128\firebase-iid-20.0.2\AndroidManifest.xml:34:17-82
+63            <meta-data
+63-->[com.google.firebase:firebase-datatransport:17.0.3] C:\Users\NinpouPC\.gradle\caches\transforms-2\files-2.1\e0da70c9258f6893a2373fb18ae7e095\firebase-datatransport-17.0.3\AndroidManifest.xml:28:13-30:85
+64                android:name="com.google.firebase.components:com.google.firebase.datatransport.TransportRegistrar"
+64-->[com.google.firebase:firebase-datatransport:17.0.3] C:\Users\NinpouPC\.gradle\caches\transforms-2\files-2.1\e0da70c9258f6893a2373fb18ae7e095\firebase-datatransport-17.0.3\AndroidManifest.xml:29:17-115
+65                android:value="com.google.firebase.components.ComponentRegistrar" />
+65-->[com.google.firebase:firebase-datatransport:17.0.3] C:\Users\NinpouPC\.gradle\caches\transforms-2\files-2.1\e0da70c9258f6893a2373fb18ae7e095\firebase-datatransport-17.0.3\AndroidManifest.xml:30:17-82
+66        </service>
+67        <!--
+68             FirebaseMessagingService performs security checks at runtime,
+69             but set to not exported to explicitly avoid allowing another app to call it.
+70        -->
+71        <service
+71-->[com.google.firebase:firebase-messaging:20.1.0] C:\Users\NinpouPC\.gradle\caches\transforms-2\files-2.1\9a24fd8fac75a6bd83e8e5b07519ef98\jetified-firebase-messaging-20.1.0\AndroidManifest.xml:28:9-34:19
+72            android:name="com.google.firebase.messaging.FirebaseMessagingService"
+72-->[com.google.firebase:firebase-messaging:20.1.0] C:\Users\NinpouPC\.gradle\caches\transforms-2\files-2.1\9a24fd8fac75a6bd83e8e5b07519ef98\jetified-firebase-messaging-20.1.0\AndroidManifest.xml:29:13-82
+73            android:exported="false" >
+73-->[com.google.firebase:firebase-messaging:20.1.0] C:\Users\NinpouPC\.gradle\caches\transforms-2\files-2.1\9a24fd8fac75a6bd83e8e5b07519ef98\jetified-firebase-messaging-20.1.0\AndroidManifest.xml:30:13-37
+74            <intent-filter android:priority="-500" >
+74-->Z:\AT\WeatherApp\app\src\main\AndroidManifest.xml:24:13-26:29
+75                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+75-->Z:\AT\WeatherApp\app\src\main\AndroidManifest.xml:25:17-78
+75-->Z:\AT\WeatherApp\app\src\main\AndroidManifest.xml:25:25-75
+76            </intent-filter>
+77        </service>
+78
+79        <receiver
+79-->[com.google.firebase:firebase-iid:20.0.2] C:\Users\NinpouPC\.gradle\caches\transforms-2\files-2.1\946a39d7756c6b05aa38a853bdffc128\firebase-iid-20.0.2\AndroidManifest.xml:37:9-44:20
+80            android:name="com.google.firebase.iid.FirebaseInstanceIdReceiver"
+80-->[com.google.firebase:firebase-iid:20.0.2] C:\Users\NinpouPC\.gradle\caches\transforms-2\files-2.1\946a39d7756c6b05aa38a853bdffc128\firebase-iid-20.0.2\AndroidManifest.xml:38:13-78
+81            android:exported="true"
+81-->[com.google.firebase:firebase-iid:20.0.2] C:\Users\NinpouPC\.gradle\caches\transforms-2\files-2.1\946a39d7756c6b05aa38a853bdffc128\firebase-iid-20.0.2\AndroidManifest.xml:39:13-36
+82            android:permission="com.google.android.c2dm.permission.SEND" >
+82-->[com.google.firebase:firebase-iid:20.0.2] C:\Users\NinpouPC\.gradle\caches\transforms-2\files-2.1\946a39d7756c6b05aa38a853bdffc128\firebase-iid-20.0.2\AndroidManifest.xml:40:13-73
+83            <intent-filter>
+83-->[com.google.firebase:firebase-iid:20.0.2] C:\Users\NinpouPC\.gradle\caches\transforms-2\files-2.1\946a39d7756c6b05aa38a853bdffc128\firebase-iid-20.0.2\AndroidManifest.xml:41:13-43:29
+84                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+84-->[com.google.firebase:firebase-iid:20.0.2] C:\Users\NinpouPC\.gradle\caches\transforms-2\files-2.1\946a39d7756c6b05aa38a853bdffc128\firebase-iid-20.0.2\AndroidManifest.xml:42:17-81
+84-->[com.google.firebase:firebase-iid:20.0.2] C:\Users\NinpouPC\.gradle\caches\transforms-2\files-2.1\946a39d7756c6b05aa38a853bdffc128\firebase-iid-20.0.2\AndroidManifest.xml:42:25-78
+85            </intent-filter>
+86        </receiver>
+87
+88        <activity
+88-->[com.google.android.gms:play-services-base:17.0.0] C:\Users\NinpouPC\.gradle\caches\transforms-2\files-2.1\b989d78505a527364775fcd163b70614\play-services-base-17.0.0\AndroidManifest.xml:23:9-26:75
+89            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+89-->[com.google.android.gms:play-services-base:17.0.0] C:\Users\NinpouPC\.gradle\caches\transforms-2\files-2.1\b989d78505a527364775fcd163b70614\play-services-base-17.0.0\AndroidManifest.xml:24:13-79
+90            android:exported="false"
+90-->[com.google.android.gms:play-services-base:17.0.0] C:\Users\NinpouPC\.gradle\caches\transforms-2\files-2.1\b989d78505a527364775fcd163b70614\play-services-base-17.0.0\AndroidManifest.xml:25:13-37
+91            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+91-->[com.google.android.gms:play-services-base:17.0.0] C:\Users\NinpouPC\.gradle\caches\transforms-2\files-2.1\b989d78505a527364775fcd163b70614\play-services-base-17.0.0\AndroidManifest.xml:26:13-72
+92
+93        <provider
+93-->[com.google.firebase:firebase-common:19.3.0] C:\Users\NinpouPC\.gradle\caches\transforms-2\files-2.1\55a309771aae37240f252916061b6dd5\jetified-firebase-common-19.3.0\AndroidManifest.xml:26:9-30:39
+94            android:name="com.google.firebase.provider.FirebaseInitProvider"
+94-->[com.google.firebase:firebase-common:19.3.0] C:\Users\NinpouPC\.gradle\caches\transforms-2\files-2.1\55a309771aae37240f252916061b6dd5\jetified-firebase-common-19.3.0\AndroidManifest.xml:27:13-77
+95            android:authorities="com.example.weatherapp.firebaseinitprovider"
+95-->[com.google.firebase:firebase-common:19.3.0] C:\Users\NinpouPC\.gradle\caches\transforms-2\files-2.1\55a309771aae37240f252916061b6dd5\jetified-firebase-common-19.3.0\AndroidManifest.xml:28:13-72
+96            android:exported="false"
+96-->[com.google.firebase:firebase-common:19.3.0] C:\Users\NinpouPC\.gradle\caches\transforms-2\files-2.1\55a309771aae37240f252916061b6dd5\jetified-firebase-common-19.3.0\AndroidManifest.xml:29:13-37
+97            android:initOrder="100" />
+97-->[com.google.firebase:firebase-common:19.3.0] C:\Users\NinpouPC\.gradle\caches\transforms-2\files-2.1\55a309771aae37240f252916061b6dd5\jetified-firebase-common-19.3.0\AndroidManifest.xml:30:13-36
+98
+99        <meta-data
+99-->[com.google.android.gms:play-services-basement:17.0.0] C:\Users\NinpouPC\.gradle\caches\transforms-2\files-2.1\1a1ec61e947bb0db2e8f31fab65183ff\jetified-play-services-basement-17.0.0\AndroidManifest.xml:23:9-25:69
+100            android:name="com.google.android.gms.version"
+100-->[com.google.android.gms:play-services-basement:17.0.0] C:\Users\NinpouPC\.gradle\caches\transforms-2\files-2.1\1a1ec61e947bb0db2e8f31fab65183ff\jetified-play-services-basement-17.0.0\AndroidManifest.xml:24:13-58
+101            android:value="@integer/google_play_services_version" />
+101-->[com.google.android.gms:play-services-basement:17.0.0] C:\Users\NinpouPC\.gradle\caches\transforms-2\files-2.1\1a1ec61e947bb0db2e8f31fab65183ff\jetified-play-services-basement-17.0.0\AndroidManifest.xml:25:13-66
+102
+103        <service
+103-->[com.google.android.datatransport:transport-backend-cct:2.2.0] C:\Users\NinpouPC\.gradle\caches\transforms-2\files-2.1\77181b27b36cb37ae3fc9cbfe9ccb0de\transport-backend-cct-2.2.0\AndroidManifest.xml:29:9-35:19
+104            android:name="com.google.android.datatransport.runtime.backends.TransportBackendDiscovery"
+104-->[com.google.android.datatransport:transport-backend-cct:2.2.0] C:\Users\NinpouPC\.gradle\caches\transforms-2\files-2.1\77181b27b36cb37ae3fc9cbfe9ccb0de\transport-backend-cct-2.2.0\AndroidManifest.xml:30:13-103
+105            android:exported="false" >
+105-->[com.google.android.datatransport:transport-backend-cct:2.2.0] C:\Users\NinpouPC\.gradle\caches\transforms-2\files-2.1\77181b27b36cb37ae3fc9cbfe9ccb0de\transport-backend-cct-2.2.0\AndroidManifest.xml:31:13-37
+106            <meta-data
+106-->[com.google.android.datatransport:transport-backend-cct:2.2.0] C:\Users\NinpouPC\.gradle\caches\transforms-2\files-2.1\77181b27b36cb37ae3fc9cbfe9ccb0de\transport-backend-cct-2.2.0\AndroidManifest.xml:32:13-34:39
+107                android:name="backend:com.google.android.datatransport.cct.CctBackendFactory"
+107-->[com.google.android.datatransport:transport-backend-cct:2.2.0] C:\Users\NinpouPC\.gradle\caches\transforms-2\files-2.1\77181b27b36cb37ae3fc9cbfe9ccb0de\transport-backend-cct-2.2.0\AndroidManifest.xml:33:17-94
+108                android:value="cct" />
+108-->[com.google.android.datatransport:transport-backend-cct:2.2.0] C:\Users\NinpouPC\.gradle\caches\transforms-2\files-2.1\77181b27b36cb37ae3fc9cbfe9ccb0de\transport-backend-cct-2.2.0\AndroidManifest.xml:34:17-36
+109        </service>
+110        <service
+110-->[com.google.android.datatransport:transport-runtime:2.2.0] C:\Users\NinpouPC\.gradle\caches\transforms-2\files-2.1\de57d140c5b40ac4922d63a6d65b36af\transport-runtime-2.2.0\AndroidManifest.xml:26:9-30:19
+111            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.JobInfoSchedulerService"
+111-->[com.google.android.datatransport:transport-runtime:2.2.0] C:\Users\NinpouPC\.gradle\caches\transforms-2\files-2.1\de57d140c5b40ac4922d63a6d65b36af\transport-runtime-2.2.0\AndroidManifest.xml:27:13-117
+112            android:exported="false"
+112-->[com.google.android.datatransport:transport-runtime:2.2.0] C:\Users\NinpouPC\.gradle\caches\transforms-2\files-2.1\de57d140c5b40ac4922d63a6d65b36af\transport-runtime-2.2.0\AndroidManifest.xml:28:13-37
+113            android:permission="android.permission.BIND_JOB_SERVICE" >
+113-->[com.google.android.datatransport:transport-runtime:2.2.0] C:\Users\NinpouPC\.gradle\caches\transforms-2\files-2.1\de57d140c5b40ac4922d63a6d65b36af\transport-runtime-2.2.0\AndroidManifest.xml:29:13-69
+114        </service>
+115
+116        <receiver
+116-->[com.google.android.datatransport:transport-runtime:2.2.0] C:\Users\NinpouPC\.gradle\caches\transforms-2\files-2.1\de57d140c5b40ac4922d63a6d65b36af\transport-runtime-2.2.0\AndroidManifest.xml:32:9-34:40
+117            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.AlarmManagerSchedulerBroadcastReceiver"
+117-->[com.google.android.datatransport:transport-runtime:2.2.0] C:\Users\NinpouPC\.gradle\caches\transforms-2\files-2.1\de57d140c5b40ac4922d63a6d65b36af\transport-runtime-2.2.0\AndroidManifest.xml:33:13-132
+118            android:exported="false" />
+118-->[com.google.android.datatransport:transport-runtime:2.2.0] C:\Users\NinpouPC\.gradle\caches\transforms-2\files-2.1\de57d140c5b40ac4922d63a6d65b36af\transport-runtime-2.2.0\AndroidManifest.xml:34:13-37
+119    </application>
+120
+121</manifest>

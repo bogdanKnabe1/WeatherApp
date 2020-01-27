@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="default_web_client_id" translatable="false">40789401603-fh216kq704kaec9tj1nmd6785e8s3rco.apps.googleusercontent.com</string>
+    <string name="firebase_database_url" translatable="false">https://weatherapplicationtest.firebaseio.com</string>
+    <string name="gcm_defaultSenderId" translatable="false">40789401603</string>
+    <string name="google_api_key" translatable="false">AIzaSyCrjTApGM622LyN08z31QYLQgCjU-KJLxU</string>
+    <string name="google_app_id" translatable="false">1:40789401603:android:2df99a17b831bcd344ee36</string>
+    <string name="google_crash_reporting_api_key" translatable="false">AIzaSyCrjTApGM622LyN08z31QYLQgCjU-KJLxU</string>
+    <string name="google_storage_bucket" translatable="false">weatherapplicationtest.appspot.com</string>
+    <string name="project_id" translatable="false">weatherapplicationtest</string>
+</resources>

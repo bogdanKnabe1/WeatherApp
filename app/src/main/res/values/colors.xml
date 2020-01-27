@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#FFFFFF</color>
+    <color name="colorAccent">#303F9F</color>
+
+    <!-- Additional colors -->
+    <color name="blue">#3F51B5</color>
+    <color name="yellow">#FFEB3B</color>
+    <color name="orange">#FFC107</color>
+    <color name="orangeButton">#FF9800</color>
+    <color name="blackText">#212121</color>
+    <color name="secondaryText">#757575</color>
+</resources>

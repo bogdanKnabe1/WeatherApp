@@ -1,0 +1,7 @@
+#Sat Jan 25 15:38:57 EET 2020
+base.0=Z\:\\AT\\WeatherApp\\app\\build\\intermediates\\dex\\debug\\mergeExtDexDebug\\out\\classes.dex
+path.1=classes.dex
+renamed.1=classes2.dex
+path.0=classes.dex
+renamed.0=classes.dex
+base.1=Z\:\\AT\\WeatherApp\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\out\\classes.dex
