@@ -3,7 +3,7 @@ Weather application with MVP architecture.
 
 A ready-made application on the full MVP architecture, which shows the weather forecast for today and the next 5 days with an interval of 3 hours. The place is tied to the geolocation of the phone. The application does NOT use any frameworks, only standard Android SDK methods are used
 
-[![Support via Gratipay](https://user-images.githubusercontent.com/47458290/73182406-b1be8200-4121-11ea-996d-8683b38b11a0.png)](https://www.donationalerts.com/r/ninpou_u)
+[![Support via Gratipay](https://user-images.githubusercontent.com/47458290/73182406-b1be8200-4121-11ea-996d-8683b38b11a0.png)
   ---
 
 Forecast screen
